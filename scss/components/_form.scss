@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  .img--avatar {
+    height: 199px;
+    width: 199px;
+    margin: 0 auto;
+  }
+  .form__input {
+    border: none;
+    padding: 16px;
+    font-size: 1em;
+    border-bottom: solid $color-primary 5px;
+    outline: 0;
+  }
+  .btn--default {
+    margin-top: 20px;
+  }
+}
+.form__label--hidden {
+  display: none;
+}
