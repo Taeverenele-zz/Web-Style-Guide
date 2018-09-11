@@ -331,6 +331,16 @@ template {
 }
 
 .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 11px 10px;
+  max-width: 380px;
+  border-radius: 5px;
+  margin-top: 7px;
+  border: none;
+  outline: none;
   justify-content: center;
   color: white;
   text-transform: uppercase;
@@ -358,6 +368,22 @@ template {
   background-color: #8661eb;
 }
 
+.grid__row {
+  margin: 40px auto;
+}
+
+.theme__colors {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 11px 10px;
+  max-width: 380px;
+  border-radius: 5px;
+  margin-top: 7px;
+  border: none;
+  outline: none;
+}
 .theme__colors.grid__col--12 {
   background-color: #8cf5c4;
 }
@@ -378,19 +404,6 @@ template {
 }
 .theme__colors.grid__col--8 {
   background-color: #ef9a78;
-}
-
-.theme__colors {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  padding: 11px 10px;
-  max-width: 380px;
-  border-radius: 5px;
-  margin-top: 7px;
-  border: none;
-  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

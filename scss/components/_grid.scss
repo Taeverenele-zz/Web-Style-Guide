@@ -1,4 +1,9 @@
+.grid__row {
+  margin: 40px auto;
+}
+
 .theme__colors {
+  @include btn-layout;
   &.grid__col--12 {
     background-color: $turquoise-blue-light-2;
   }

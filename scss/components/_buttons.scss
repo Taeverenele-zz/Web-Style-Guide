@@ -1,4 +1,5 @@
 %btn {
+  @include btn-layout;
   justify-content: center;
   color: white;
   text-transform: uppercase;
