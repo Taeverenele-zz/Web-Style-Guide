@@ -1,0 +1,23 @@
+//Create at least one variable for fonts, breakpoints, and colors.
+// Descriptive color variables
+
+$turquoise-blue: #5df1ac;
+$turquoise-blue-light-2: lighten($turquoise-blue, 10%);
+$turquoise-blue-light-1: lighten($turquoise-blue, 5%);
+$aqua: #00ccff;
+$aqua-light: lighten($aqua, 15%);
+$aqua-dark: darken($aqua, 10%);
+$roman: #db5353;
+$roman-light: lighten($roman, 15%);
+$cinnabar: #e76634;
+$cinnabar-light: lighten($cinnabar, 15%);
+$medium-purple: #8661eb;
+$medium-purple-light: lighten($medium-purple, 15%);
+$margin-center: 0 auto;
+
+// Functional color variables
+
+$color-primary: #5df1ac;
+$color-secondary: #00ccff;
+$color-text-base: #6e6b6b;
+$color-text-light: #fff;

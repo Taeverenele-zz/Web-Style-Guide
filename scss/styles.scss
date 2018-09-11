@@ -1,0 +1,64 @@
+@import './base/index';
+@import './components/index';
+@import './utilities/index';
+
+.theme__colors {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 11px 10px;
+  max-width: 380px;
+  border-radius: 5px;
+  margin-top: 7px;
+  border: none;
+  outline: none;
+}
+.grid__col--12.theme__colors {
+  background-color: $turquoise-blue-light-2;
+}
+.grid__col--6.theme__colors {
+  background-color: $aqua-dark;
+}
+.grid__col--4.theme__colors {
+  background-color: $aqua-light;
+}
+.grid__col--3.theme__colors {
+  background-color: $medium-purple-light;
+}
+.grid__col--5.theme__colors {
+  background-color: $turquoise-blue-light-1;
+}
+.grid__col--7.theme__colors {
+  background-color: $roman-light;
+}
+.grid__col--8.theme__colors {
+  background-color: $cinnabar-light;
+}
+%btn {
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn--default {
+  @extend %btn;
+  background-color: $aqua;
+}
+.btn--success {
+  @extend %btn;
+  background-color: $turquoise-blue;
+}
+.btn--error {
+  @extend %btn;
+  background-color: $roman;
+}
+.btn--warning {
+  @extend %btn;
+  background-color: $cinnabar;
+}
+.btn--info {
+  @extend %btn;
+  background-color: $medium-purple;
+}
