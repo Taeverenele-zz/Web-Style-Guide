@@ -1,0 +1,27 @@
+%btn {
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn--default {
+  @extend %btn;
+  background-color: $aqua;
+}
+.btn--success {
+  @extend %btn;
+  background-color: $turquoise-blue;
+}
+.btn--error {
+  @extend %btn;
+  background-color: $roman;
+}
+.btn--warning {
+  @extend %btn;
+  background-color: $cinnabar;
+}
+.btn--info {
+  @extend %btn;
+  background-color: $medium-purple;
+}

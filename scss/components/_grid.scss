@@ -1,0 +1,23 @@
+.theme__colors {
+  &.grid__col--12 {
+    background-color: $turquoise-blue-light-2;
+  }
+  &.grid__col--6 {
+    background-color: $aqua-dark;
+  }
+  &.grid__col--4 {
+    background-color: $aqua-light;
+  }
+  &.grid__col--3 {
+    background-color: $medium-purple-light;
+  }
+  &.grid__col--5 {
+    background-color: $turquoise-blue-light-1;
+  }
+  &.grid__col--7 {
+    background-color: $roman-light;
+  }
+  &.grid__col--8 {
+    background-color: $cinnabar-light;
+  }
+}
