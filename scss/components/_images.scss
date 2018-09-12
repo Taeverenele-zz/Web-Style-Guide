@@ -2,7 +2,26 @@
 // .img--logo
 // .img--frame
 // .img--avatar
-.img--frame {
-  border: 1px solid $color-text-base;
-  padding: 10px;
+.img{
+  &--logo {
+  display: block;
+  margin: 0 auto;
+  }
+
+  &--avatar {
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: 20px auto 0 auto;
+  }
+
+  &--frame {
+      display: block;
+      max-width: 410px;
+      max-height: 200px;
+      max-width: 100%;
+      padding: 10px;
+      border: 0.1px solid $color-primary;
+      margin: 0 auto;
+  }
 }
