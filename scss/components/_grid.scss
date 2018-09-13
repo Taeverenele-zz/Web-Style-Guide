@@ -1,5 +1,5 @@
 .container {
-  width: 80%;
+  width: 85%;
   margin: 20px auto;
 }
 
@@ -8,26 +8,39 @@
 }
 
 .theme__colors {
-  @include btn-layout;
   &.grid__col--12 {
+    @include btn-layout;
+    @include flexy;
     background-color: $turquoise-blue-light-2;
   }
   &.grid__col--6 {
+    @include btn-layout;
+    @include flexy;
     background-color: $aqua-dark;
   }
   &.grid__col--4 {
+    @include btn-layout;
+    @include flexy;
     background-color: $aqua-light;
   }
   &.grid__col--3 {
+    @include btn-layout;
+    @include flexy;
     background-color: $medium-purple-light;
   }
   &.grid__col--5 {
+    @include btn-layout;
+    @include flexy;
     background-color: $turquoise-blue-light-1;
   }
   &.grid__col--7 {
+    @include btn-layout;
+    @include flexy;
     background-color: $roman-light;
   }
   &.grid__col--8 {
+    @include btn-layout;
+    @include flexy;
     background-color: $cinnabar-light;
   }
 }

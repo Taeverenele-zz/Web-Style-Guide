@@ -9,8 +9,6 @@
   }
 
   &--avatar {
-      width: 150px;
-      height: 150px;
       display: block;
       margin: 20px auto 0 auto;
   }
@@ -21,7 +19,7 @@
       max-height: 200px;
       max-width: 100%;
       padding: 10px;
-      border: 0.1px solid $color-primary;
+      border: 0.1px solid $color-text-base;
       margin: 0 auto;
   }
 }

@@ -1,12 +1,21 @@
 // Create mixins for the following:
 // ❏ Media Queries
 // ❏ Flexbox settings
+@mixin mq($break) {
+  @if $break == null {
+      @error "`#{$break}` is not a valid breakpoint name.";
+  }
 
+  @else if $break == 'lg' {
+      @media (min-width: $breakpoint-lg) {
+          @content;
+      }
+  }
+}
 @mixin btn-layout {
-  display: flex;
+  color: $color-text-dark;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
   padding: 11px 10px;
   max-width: 400px;
   border-radius: 5px;

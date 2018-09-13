@@ -19,7 +19,10 @@ $margin-center: 0 auto;
 
 $color-primary: #5df1ac;
 $color-secondary: #00ccff;
-$color-text-base: #6e6b6b;
+$color-text-base: #979393;
+$color-text-dark: darken($color-text-base, 20%);
 $color-text-light: #fff;
 
 $breakpoint-lg: 769px;
+
+$font-stack: 'Helvetica Neue', serif;
