@@ -18,3 +18,14 @@
     @extend %btn;
     background-color: $medium-purple;
   }
+  @include mq(lg) {
+    .grid__col--12 {
+      .btn--default,
+      .btn--success,
+      .btn--error,
+      .btn--warning,
+      .btn--info {
+      margin: 20px;
+      }
+    }
+  }

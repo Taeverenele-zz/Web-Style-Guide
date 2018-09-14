@@ -1,46 +1,86 @@
-.container {
-  width: 85%;
-  margin: 20px auto;
+.theme__colors.grid__col--12 {
+  @extend %theme-colors;
+  background-color: $turquoise-blue-light-2;
 }
-
+.theme__colors.grid__col--6 {
+  @extend %theme-colors;
+background-color: $aqua-dark;
+}
+.theme__colors.grid__col--3 {
+  @extend %theme-colors;
+background-color: $medium-purple-light;
+}
+.theme__colors.grid__col--5 {
+  @extend %theme-colors;
+background-color: $turquoise-blue-light-1;
+}
+.theme__colors.grid__col--7 {
+  @extend %theme-colors;
+background-color: $roman-light;
+}
+.theme__colors.grid__col--8 {
+  @extend %theme-colors;
+background-color: $cinnabar-light;
+}
+.theme__colors.grid__col--4 {
+  @extend %theme-colors;
+background-color: $aqua-light;
+}
 .grid__row {
-  margin: 40px auto;
+margin: 40px auto;
+@include mq(lg) {
+  @include flexy($just: space-between);
+  }
+}
+.grid__col--2,
+.grid__col--3,
+.grid__col--4,
+.grid__col--5,
+.grid__col--6,
+.grid__col--7,
+.grid__col--8,
+.grid__col--9,
+.grid__col--10,
+.grid__col--11,
+.grid__col--12 {
+  flex: 1;
 }
 
-.theme__colors {
-  &.grid__col--12 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $turquoise-blue-light-2;
+@include mq(lg) {
+  .grid__col--8 {
+    flex: 2;
   }
-  &.grid__col--6 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $aqua-dark;
+  .grid__col--12 {
+    flex: 3;
   }
-  &.grid__col--4 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $aqua-light;
+  .grid__col--7 {
+    flex: 2;
   }
-  &.grid__col--3 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $medium-purple-light;
+  .grid__row .grid__col--12 {
+    @include flexy($dir: row, $just: space-between);
   }
-  &.grid__col--5 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $turquoise-blue-light-1;
+  .grid__row .grid__col--9 {
+    flex: 2;
   }
-  &.grid__col--7 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $roman-light;
+  .grid__col--12.theme__colors {
+    display: inline-block;
   }
-  &.grid__col--8 {
-    @include btn-layout;
-    @include flexy;
-    background-color: $cinnabar-light;
+  .grid__col--6.theme__colors,
+  .grid__col--12.theme__colors,
+  .grid__col--4.theme__colors,
+  .grid__col--3.theme__colors,
+  .grid__col--5.theme__colors,
+  .grid__col--7.theme__colors,
+  .grid__col--8.theme__colors   {
+    margin: 5px;
+    text-align: center;
+  }
+  .grid__col--7.centered {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .grid__col--12 .card {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

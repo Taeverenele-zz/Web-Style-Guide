@@ -1,24 +1,29 @@
 .form {
   @include flexy($dir: column);
   margin: 0 auto;
-  .img--avatar {
-    height: 199px;
-    width: 199px;
-    margin: 0 auto;
-  }
-  .form__input {
-    @include font-size(16px);
-    border: none;
-    padding: 16px;
-    border-bottom: solid $color-primary 5px;
-    outline: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .btn--default {
-    margin-top: 20px;
-  }
 }
 .form__label--hidden {
   display: none;
+}
+.form__input {
+  @include font-size(16px);
+  border: none;
+  padding: 16px;
+  border-bottom: solid $turquoise-blue 5px;
+  outline: 0;
+  width: 85%;
+  margin: 0 auto;
+}
+.form .btn--default {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: $aqua;
+  padding: 15px 20px;
+  border: none;
+  color: $color-text-light;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.form .headline--secondary {
+  margin-left: 20px;
 }

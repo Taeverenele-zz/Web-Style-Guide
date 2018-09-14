@@ -5,23 +5,11 @@
   @if $break == null {
       @error "`#{$break}` is not a valid breakpoint name.";
   }
-
   @else if $break == 'lg' {
-      @media (min-width: $breakpoint-lg) {
+      @media (min-width: $break-lg) {
           @content;
       }
   }
-}
-@mixin btn-layout {
-  color: $color-text-dark;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 11px 10px;
-  max-width: 400px;
-  border-radius: 5px;
-  margin-top: 7px;
-  border: none;
-  outline: none;
 }
 
 @mixin font-size($size) {
