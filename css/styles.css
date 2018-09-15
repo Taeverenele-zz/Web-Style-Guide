@@ -1,3 +1,29 @@
+.btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 90%;
+  cursor: pointer;
+}
+
+.theme__colors.grid__col--4, .theme__colors.grid__col--8, .theme__colors.grid__col--7, .theme__colors.grid__col--5, .theme__colors.grid__col--3, .theme__colors.grid__col--6, .theme__colors.grid__col--12 {
+  color: #535050;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+
+.img--frame, .img--avatar, .img--logo {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -344,31 +370,6 @@ template {
   display: none;
 }
 
-.btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  border-radius: 5px;
-  padding: 15px 20px;
-  border: none;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  width: 90%;
-}
-
-.theme__colors.grid__col--4, .theme__colors.grid__col--8, .theme__colors.grid__col--7, .theme__colors.grid__col--5, .theme__colors.grid__col--3, .theme__colors.grid__col--6, .theme__colors.grid__col--12 {
-  color: #535050;
-  padding: 15px 20px;
-  border-radius: 5px;
-  margin-top: 7px;
-}
-
-.img--frame, .img--avatar, .img--logo {
-  display: block;
-}
-
 .container {
   width: 85%;
   margin: 20px auto;
@@ -639,7 +640,7 @@ template {
   transition: background-color 0.2s, color 0.3s, transform 0.2s;
 }
 .nav a:hover {
-  color: white;
+  color: #fff;
   font-weight: 600;
   background-color: #5df1ac;
 }

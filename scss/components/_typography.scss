@@ -2,7 +2,7 @@
   width: 85%;
   margin: 20px auto;
   font-family: $font-stack;
-  color: #979393;
+  color: $color-text-base;
   @include mq(lg) {
     @include font-size(18px);
       max-width: 1150px;
@@ -25,7 +25,7 @@
 }
 .headline {
   &--primary {
-  @include font-style($color: $turquoise-blue);
+  @include font-style($color: $color-primary);
   padding-left: 20px;
 }
   &--secondary {
@@ -34,13 +34,13 @@
 }
 
 .link {
-  @include font-style($color: $aqua, $weight: 600);
+  @include font-style($color: $color-secondary, $weight: 600);
   text-decoration: none;
 }
 .blockquote {
   @include font-size(25px);
   @include font-style($weight: 300, $style: italic);
-  border-left: solid $turquoise-blue 10px;
+  border-left: solid $color-primary 10px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   margin-left: 20px;

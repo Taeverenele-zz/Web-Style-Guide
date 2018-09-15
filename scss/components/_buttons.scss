@@ -1,34 +1,20 @@
-  .btn--default {
+@each $theme, $color in $btn-themes {
+  .btn--#{$theme} {
+    background-color: $color;
     @extend %btn;
-    background-color: $aqua;
   }
-  .btn--success {
-    @extend %btn;
-    background-color: $turquoise-blue;
-  }
-  .btn--error {
-    @extend %btn;
-    background-color: $roman;
-  }
-  .btn--warning {
-    @extend %btn;
-    background-color: $cinnabar;
-  }
-  .btn--info {
-    @extend %btn;
-    background-color: $medium-purple;
-  }
-  @include mq(lg) {
-    .grid__col--12 {
-      .btn--default,
-      .btn--success,
-      .btn--error,
-      .btn--warning,
-      .btn--info {
-      margin: 20px;
-      }
-    }
-    .grid__row .grid__col--12 {
-      @include flexy($dir: row, $just: space-between);
+}
+@include mq(lg) {
+  .grid__col--12 {
+    .btn--default,
+    .btn--success,
+    .btn--error,
+    .btn--warning,
+    .btn--info {
+    margin: 20px;
     }
   }
+  .grid__row .grid__col--12 {
+    @include flexy($dir: row, $just: space-between);
+  }
+}

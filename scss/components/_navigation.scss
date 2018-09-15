@@ -3,13 +3,13 @@
     text-align: center;
     a {
     border-radius: 5px;
-    color: #979393;
+    color: $color-text-base;
     text-decoration: none;
     display: block;
     padding: 10px;
     transition: background-color 0.2s, color 0.3s, transform 0.2s;
     &:hover {
-        @include font-style($color: white, $weight: 600);
+        @include font-style($color: $color-text-light, $weight: 600);
         background-color: $turquoise-blue;
     }
   }
