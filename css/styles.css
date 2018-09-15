@@ -365,6 +365,10 @@ template {
   margin-top: 7px;
 }
 
+.img--frame, .img--avatar, .img--logo {
+  display: block;
+}
+
 .container {
   width: 85%;
   margin: 20px auto;
@@ -401,22 +405,21 @@ template {
   color: #5df1ac;
   padding-left: 20px;
 }
-
 .headline--secondary {
   font-weight: 200;
 }
 
 .link {
   color: #00ccff;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .blockquote {
   font-size: 25px;
   font-size: 1.5625rem;
-  font-style: italic;
   font-weight: 300;
+  font-style: italic;
   border-left: solid #5df1ac 10px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -457,7 +460,6 @@ template {
 }
 
 .img--logo {
-  display: block;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
@@ -466,13 +468,11 @@ template {
   }
 }
 .img--avatar {
-  display: block;
   height: 199px;
   width: 199px;
   margin: 20px auto 0 auto;
 }
 .img--frame {
-  display: block;
   margin: 0 auto;
   padding: 10px;
   border: 0.1px solid #979393;
@@ -617,19 +617,6 @@ template {
     flex: 3;
   }
 
-  .grid__row .grid__col--12 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .grid__row .grid__col--9 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 2;
-  }
-
   .grid__col--12.theme__colors {
     display: inline-block;
   }
@@ -637,11 +624,6 @@ template {
   .grid__col--7.centered {
     max-width: 60%;
     margin: 0 auto;
-  }
-
-  .grid__col--12 .card {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 .nav {
@@ -658,8 +640,8 @@ template {
 }
 .nav a:hover {
   color: white;
-  background-color: #5df1ac;
   font-weight: 600;
+  background-color: #5df1ac;
 }
 
 @media (min-width: 769px) {

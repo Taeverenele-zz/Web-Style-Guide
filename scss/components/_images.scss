@@ -2,22 +2,22 @@
 // .img--logo
 // .img--frame
 // .img--avatar
-.img{
+.img {
   &--logo {
-  display: block;
-  margin: 50px auto;
-  @include mq(lg) {
+    @extend %img;
+    margin: 50px auto;
+    @include mq(lg) {
     margin: 0 30px;
      }
   }
   &--avatar {
-    display: block;
+    @extend %img;
     height: 199px;
     width: 199px;
     margin: 20px auto 0 auto;
   }
   &--frame {
-    display: block;
+    @extend %img;
     margin: 0 auto;
     padding: 10px;
     border: 0.1px solid $color-text-base;

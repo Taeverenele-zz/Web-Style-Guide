@@ -28,3 +28,13 @@ $cinnabar: #e76634;
 $cinnabar-light: lighten($cinnabar, 15%);
 $medium-purple: #8661eb;
 $medium-purple-light: lighten($medium-purple, 15%);
+
+$themes: (
+  12: $turquoise-blue-light-2,
+  6: $aqua-dark,
+  3: $medium-purple-light,
+  5: $turquoise-blue-light-1,
+  7: $roman-light,
+  8: $cinnabar-light,
+  4: $aqua-light,
+);

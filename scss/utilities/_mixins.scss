@@ -27,8 +27,9 @@
   font-size: calculateRem($size);
 }
 
-@mixin font-style($color: null, $weight: null, $lh: null) {
+@mixin font-style($color: null, $weight: null, $lh: null, $style: null) {
   color: $color;
   font-weight: $weight;
   line-height: $lh;
+  font-style: $style;
 }

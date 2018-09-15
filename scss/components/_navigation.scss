@@ -9,9 +9,8 @@
     padding: 10px;
     transition: background-color 0.2s, color 0.3s, transform 0.2s;
     &:hover {
-        color: white;
+        @include font-style($color: white, $weight: 600);
         background-color: $turquoise-blue;
-        font-weight: 600;
     }
   }
 }

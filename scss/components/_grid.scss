@@ -1,59 +1,71 @@
-.theme__colors.grid__col--12 {
-  @extend %theme-colors;
-  background-color: $turquoise-blue-light-2;
-  @include mq(lg) {
-    margin: 5px;
-    text-align: center;
+@each $theme, $color in $themes {
+  .theme__colors.grid__col--#{$theme} {
+    background-color: $color;
+    @extend %links;
+    @include mq(lg) {
+      margin: 5px;
+      text-align: center;
+    }
   }
 }
-.theme__colors.grid__col--6 {
-  @extend %theme-colors;
-background-color: $aqua-dark;
-  @include mq(lg) {
-    margin: 5px;
-    text-align: center;
-  }
-}
-.theme__colors.grid__col--3 {
-  @extend %theme-colors;
-background-color: $medium-purple-light;
-@include mq(lg) {
-  margin: 5px;
-  text-align: center;
-}
-}
-.theme__colors.grid__col--5 {
-  @extend %theme-colors;
-background-color: $turquoise-blue-light-1;
-@include mq(lg) {
-  margin: 5px;
-  text-align: center;
-}
-}
-.theme__colors.grid__col--7 {
-  @extend %theme-colors;
-background-color: $roman-light;
-@include mq(lg) {
-  margin: 5px;
-  text-align: center;
-}
-}
-.theme__colors.grid__col--8 {
-  @extend %theme-colors;
-background-color: $cinnabar-light;
-  @include mq(lg) {
-    margin: 5px;
-    text-align: center;
-  }
-}
-.theme__colors.grid__col--4 {
-  @extend %theme-colors;
-background-color: $aqua-light;
-@include mq(lg) {
-  margin: 5px;
-  text-align: center;
-}
-}
+
+
+// .theme__colors.grid__col--12 {
+//   @extend %links;
+//   // background-color: $turquoise-blue-light-2;
+//   @include mq(lg) {
+//     margin: 5px;
+//     text-align: center;
+//   }
+// }
+// .theme__colors.grid__col--6 {
+//   @extend %links;
+// // background-color: $aqua-dark;
+//   @include mq(lg) {
+//     margin: 5px;
+//     text-align: center;
+//   }
+// }
+// .theme__colors.grid__col--3 {
+//   @extend %links;
+// // background-color: $medium-purple-light;
+// @include mq(lg) {
+//   margin: 5px;
+//   text-align: center;
+// }
+// }
+// .theme__colors.grid__col--5 {
+//   @extend %links;
+// // background-color: $turquoise-blue-light-1;
+// @include mq(lg) {
+//   margin: 5px;
+//   text-align: center;
+// }
+// }
+// .theme__colors.grid__col--7 {
+//   @extend %links;
+// // background-color: $roman-light;
+// @include mq(lg) {
+//   margin: 5px;
+//   text-align: center;
+// }
+// }
+// .theme__colors.grid__col--8 {
+//   @extend %links;
+// // background-color: $cinnabar-light;
+//   @include mq(lg) {
+//     margin: 5px;
+//     text-align: center;
+//   }
+// }
+// .theme__colors.grid__col--4 {
+//   @extend %links;
+// // background-color: $aqua-light;
+// @include mq(lg) {
+//   margin: 5px;
+//   text-align: center;
+// }
+// }
 .grid__row {
 margin: 40px auto;
 @include mq(lg) {
