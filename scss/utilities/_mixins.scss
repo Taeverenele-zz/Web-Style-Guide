@@ -1,6 +1,5 @@
-// Create mixins for the following:
 // ❏ Media Queries
-// ❏ Flexbox settings
+
 @mixin mq($break) {
   @if $break == null {
       @error "`#{$break}` is not a valid breakpoint name.";
@@ -12,14 +11,24 @@
   }
 }
 
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
+// ❏ Flexbox settings
 
 @mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null) {
   display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
+}
+
+// Font settings
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin font-style($color: null, $weight: null, $lh: null) {
+  color: $color;
+  font-weight: $weight;
+  line-height: $lh;
 }

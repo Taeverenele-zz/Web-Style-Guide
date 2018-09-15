@@ -1,4 +1,19 @@
-//Create at least one variable for fonts, breakpoints, and colors.
+// Fonts
+
+$font-stack: 'Helvetica Neue', serif;
+
+// Breakpoints
+
+$break-lg: 769px;
+
+// Functional color variables
+
+$color-primary: #5df1ac;
+$color-secondary: #00ccff;
+$color-text-base: #979393;
+$color-text-dark: darken($color-text-base, 20%);
+$color-text-light: #fff;
+
 // Descriptive color variables
 
 $turquoise-blue: #5df1ac;
@@ -13,16 +28,3 @@ $cinnabar: #e76634;
 $cinnabar-light: lighten($cinnabar, 15%);
 $medium-purple: #8661eb;
 $medium-purple-light: lighten($medium-purple, 15%);
-$margin-center: 0 auto;
-
-// Functional color variables
-
-$color-primary: #5df1ac;
-$color-secondary: #00ccff;
-$color-text-base: #979393;
-$color-text-dark: darken($color-text-base, 20%);
-$color-text-light: #fff;
-
-$break-lg: 769px;
-
-$font-stack: 'Helvetica Neue', serif;

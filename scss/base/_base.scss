@@ -2,11 +2,15 @@
 * {
   box-sizing: border-box;
 }
-ul {
-  list-style-type: none;
-  padding: 0px;
-  text-align: center;
+.grid__col--9 {
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+  }
 }
-p {
-  color: #979393;
+.card {
+  p {
+    color: #979393;
+  }
 }

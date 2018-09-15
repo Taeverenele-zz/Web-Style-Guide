@@ -1,12 +1,12 @@
-.nav__item {
+.nav {
     width: 100%;
     text-align: center;
-  a {
+    a {
     border-radius: 5px;
     color: #979393;
     text-decoration: none;
     display: block;
-    padding: 10px 5px;
+    padding: 10px;
     transition: background-color 0.2s, color 0.3s, transform 0.2s;
     &:hover {
         color: white;
@@ -18,9 +18,13 @@
 
 @include mq(lg) {
     .nav {
-        @include flexy;
+        @include flexy($just: space-around);
         margin-right: 50px;
     }
+    .grid__row .grid__col--9 {
+        @include flexy($dir: row, $just: space-around);
+        flex: 2;
+      }
 }
 
 
